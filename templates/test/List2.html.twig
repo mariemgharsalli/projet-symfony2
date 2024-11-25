@@ -1,0 +1,11 @@
+{%extends 'base.html.twig'%}
+{% block body%}
+
+
+{% for ts in test %}
+    {{ ts.nom }} <br>
+    {{ ts.prenom }} <br>
+    {{ ts.age }} <br>
+    {{ ts.email }} <br> {# Corrected from "emaiil" to "email" #}
+{% endfor %}
+{% endblock %}
